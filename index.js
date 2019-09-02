@@ -227,5 +227,6 @@ var studentA = student.list
 console.log(student);
 
 
-
+var studentA = student.filter((talleststudent) => student.height);
+console.log(student);
 
