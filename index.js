@@ -222,11 +222,51 @@ var student = [
         level:300,
         grade: [30,40,80,90,100]
     }
-]
-var studentA = student.list
-console.log(student);
+    {
+        name:"Stephen Nanrest",
+        age: 23,
+        address:"Ring Road",
+        tribe:"Magwavul",
+        gender:"female",
+        
+        Height:0.52,
+        department:"CSC",
+        level:300,
+        grade: [30,40,80,90,100]
+    }
+];
 
+a = 0;
+var mates = Student.filter(function(value) {
+    if (a < values.Height) {
+        a = values.Height;
+    }
+});
 
-var studentA = student.filter((talleststudent) => student.height);
-console.log(student);
+//get te full details of the person with max height
+var result = Student.filter(function(data) {
+    if (data.Height == a) {
+        return data;
+    }
+});
+
+console.log(result)
+function avg(arr) {
+    var num = 0;
+    for (var index = 0; index < arr.length; index++) {
+        num = num + arr[index];
+    }
+    return num / arr.length;
+}
+
+var b = 0;
+var v;
+Student.forEach(function(item, index, data){
+    if (b < avg (item.grade)) {
+        b = avg(item.grade);
+        v = index;
+        // console.log(data[index]);
+    }
+});
+console.log(Student[v]);
 
